@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test thread-count="5" name="On wareHouse Inbound activity" preserve-order="true">
+        <classes>
+            <class name="com.wmsTest_Mahindra.wmsInboundFlow">
+                <methods>
+                    <include name="testSelectedWarehouse"/>
+                    <include name="testCreatePreGrn"/>
+                    <include name="testCreatePreGrnDetails"/>
+                    <include name="testGrnCreation"/>
+                    <include name="testGrnCreateDetails"/>
+                    <include name="testGrnCreateComplete"/>
+                    <include name="testIbAssign"/>
+                    <include name="testUpdateGrnDetails"/>
+                    <include name="testGrnConfirm"/>
+                    <include name="testGetGrnConfirmationId"/>
+                    <include name="testGeneratePut"/>
+                    <include name="testGetPutProcessDetails"/>
+                    <include name="testGetAssignPutDetails"/>
+                    <include name="testPutAssign"/>
+                    <include name="testPutConfirm"/>
+                    <include name="testMethodToGetAllData"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+    <test thread-count="5" name="On wareHouse Midbound activity" preserve-order="true">
+        <classes>
+            <class name="com.wmsTest_Mahindra.wmsMidboundFlow">
+                <methods>
+                    <include name="testSelectedWarehouse"/>
+                    <include name="getForRelocationDetails"/>
+                    <include name="testCreateReloaction"/>
+                    <include name="testCreateRelocationDetails"/>
+                    <include name="testRelocationComp"/>
+                    <include name="getForRelocationAssign"/>
+                    <include name="testRelocationAssign"/>
+                    <include name="getForAssignConfirm"/>
+                    <include name="testAssignConfirm"/>
+                    <include name="testGetAllDetailsMethod"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
